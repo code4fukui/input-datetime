@@ -7,6 +7,12 @@ class InputTime extends InputWithValidator {
     this.inp.type = "time";
     this.inp.onkeydown = this.inp.onkeyup = undefined;
   }
+  set value(v) {
+    this.inp.value = v.toString();
+  }
+  get value() {
+    return super.value;
+  }
 }
 
 customElements.define("input-time", InputTime);

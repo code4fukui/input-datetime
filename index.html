@@ -9,11 +9,11 @@
 <h1>input-date tag demo</h1>
 
 <div style="display: inline-grid; grid-template-columns: 1fr 1fr 1fr;grid-gap: .5em">
-  <div>input-date</div><input-date id=inp1></input-date><div>input-date</div>
+  <div>input-date</div><input-date id=inp1></input-date><div>input-date <button id=set1>now</button></div>
   <div>input-date required=required</div><input-date id=inp2 required=required></input-date><div>and required</div>
-  <div>input-time</div><input-time id=inp3></input-time><div>input-time</div>
+  <div>input-time</div><input-time id=inp3></input-time><div>input-time <button id=set2>now</button></div>
   <div>input-time required=required</div><input-time id=inp4 required=required></input-time><div>and required</div>
-  <div>input-datetime</div><input-datetime id=inp5></input-datetime><div>input-datetime</div>
+  <div>input-datetime</div><input-datetime id=inp5></input-datetime><div>input-datetime <button id=set3>now</button></div>
   <div>input-datetime required=required</div><input-datetime id=inp6 required=required></input-datetime><div>and required</div>
 </div>
 
@@ -22,6 +22,8 @@
 <input id=res placeholder="result">
 
 <script type="module">
+import { DateTime, Day, Time } from "https://js.sabae.cc/DateTime.js";
+
 onload = () => {
   for (let i = 1; i <= 6; i++) {
     const inp = document.getElementById("inp" + i);
@@ -29,6 +31,15 @@ onload = () => {
       res.value = inp.value;
     };
   }
+  set1.onclick = () => {
+    inp1.value = new Day();
+  };
+  set2.onclick = () => {
+    inp3.value = new Time();
+  };
+  set3.onclick = () => {
+    inp5.value = new DateTime();
+  };
 };
 </script>
 
