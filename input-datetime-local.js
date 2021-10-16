@@ -2,7 +2,7 @@ import { InputWithValidator } from "https://code4fukui.github.io/input-number/In
 import { Validator } from "https://code4fukui.github.io/input-number/Validator.js";
 import { DateTime } from "https://js.sabae.cc/DateTime.js";
 
-class InputDateTime extends InputWithValidator {
+class InputDateTimeLocal extends InputWithValidator {
   constructor(opts) {
     super(new Validator(), opts);
     this.inp.type = "datetime-local";
@@ -20,6 +20,6 @@ class InputDateTime extends InputWithValidator {
   }
 }
 
-customElements.define("input-datetime", InputDateTime);
+customElements.define("input-datetime-local", InputDateTimeLocal);
 
-export { InputDateTime };
+export { InputDateTimeLocal };
