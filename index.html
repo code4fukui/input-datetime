@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>input-date / input-time / input-datetime tag demo</title>
+</head><body>
+
+<script type="module" src="./input-date.js"></script>
+<script type="module" src="./input-time.js"></script>
+<script type="module" src="./input-datetime.js"></script>
+
+<h1>input-date tag demo</h1>
+
+<div style="display: inline-grid; grid-template-columns: 1fr 1fr 1fr;grid-gap: .5em">
+  <div>input-date</div><input-date id=inp1></input-date><div>input-date</div>
+  <div>input-date required=required</div><input-date id=inp2 required=required></input-date><div>and required</div>
+  <div>input-time</div><input-time id=inp3></input-time><div>input-time</div>
+  <div>input-time required=required</div><input-time id=inp4 required=required></input-time><div>and required</div>
+  <div>input-datetime</div><input-datetime id=inp5></input-datetime><div>input-datetime</div>
+  <div>input-datetime required=required</div><input-datetime id=inp6 required=required></input-datetime><div>and required</div>
+</div>
+
+<br>
+<br>
+<input id=res placeholder="result">
+
+<script type="module">
+onload = () => {
+  for (let i = 1; i <= 6; i++) {
+    const inp = document.getElementById("inp" + i);
+    inp.onchange = () => {
+      res.value = inp.value;
+    };
+  }
+};
+</script>
+
+<hr>
+<a href=https://fukuno.jig.jp/3368>by @taisukef</a>, <a href=https://github.com/code4fukui/input-datetime/>src on GitHub</a>
+
+<style>
+body {
+  margin: 3em;
+}
+input {
+  font-size: 16px;
+}
+annotate-element {
+  background-color: #fdd;
+  padding: .1em .8em;
+  font-size: 80%;
+}
+.required {
+  background-color: #fcc;
+}
+</style>
+
+</body></html>
