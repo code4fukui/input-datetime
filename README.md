@@ -1,12 +1,12 @@
-# input-alpha
+# input-datetime
   
-https://code4fukui.github.io/input-alpha/
+https://code4fukui.github.io/input-datetime/
 
 ## usage
 
 ```html
-<script type="module" src="https://code4fukui.github.io/input-alpha/input-alpha.js"></script>
-<input-alpha id=inp maxlength=5></input-alpha>
+<script type="module" src="https://code4fukui.github.io/input-datetime/input-datetime.js"></script>
+<input-datetime id=inp required=required></input-datetime>
 
 <script type="module">
 onload = () => {
