@@ -44,6 +44,19 @@ onload = () => {
 </script>
 
 <hr>
+<div id=p></div>
+
+<script type="module">
+import { InputDate } from "./input-date.js";
+
+//const inp = new InputDate({ required: "required", value: "2021-10-18" });
+const inp = new InputDate({ required: "required" });
+setTimeout(() => {inp.value = "2021-10-18" }, 100);
+p.appendChild(inp);
+</script>
+
+<hr>
+
 <a href=https://fukuno.jig.jp/3370>by @taisukef</a>, <a href=https://github.com/code4fukui/input-datetime/>src on GitHub</a>
 
 <style>

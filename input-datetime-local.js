@@ -10,9 +10,9 @@ class InputDateTimeLocal extends InputWithValidator {
   }
   set value(v) {
     if (v instanceof DateTime) {
-      this.inp.value = v.toStringLocal();
+      super.value = v.toStringLocal();
     } else {
-      this.inp.value = v.toString();
+      super.value = v.toString();
     }
   }
   get value() {
