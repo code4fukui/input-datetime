@@ -6,7 +6,7 @@ A set of custom HTML elements for date, time, and local date-time inputs, featur
 
 ## Demo
 
-Try the live demo: **https://code4fukui.github.io/input-datetime/**
+Try the live demo: **https://github.com/code4fukui/input-datetime
 
 ## Features
 

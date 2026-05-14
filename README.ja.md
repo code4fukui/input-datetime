@@ -4,7 +4,7 @@
 
 ## デモ
 
-ライブデモはこちら: **https://code4fukui.github.io/input-datetime/**
+ライブデモはこちら: **https://github.com/code4fukui/input-datetime
 
 ## 特徴
 
